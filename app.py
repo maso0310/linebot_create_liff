@@ -21,36 +21,17 @@ import  os
 import time
 #======python的函數庫==========
 
-#======讓heroku不會睡著======
-import threading 
-import requests
-def wake_up_heroku():
-    while 1==1:
-        url = '你的herokuapp網址' + 'heroku_wake_up'
-        res = requests.get(url)
-        if res.status_code==200:
-            print('喚醒heroku成功')
-        else:
-            print('喚醒失敗')
-        time.sleep(28*60)
-
-threading.Thread(target=wake_up_heroku).start()
-#======讓heroku不會睡著======
 
 app = Flask(__name__,template_folder='templates')
 static_tmp_path = os.path.join(os.path.dirname(__file__), 'static', 'tmp')
 # Channel Access Token
-line_bot_api = LineBotApi('你的Channel AcessToken')
+line_bot_api = LineBotApi('Hm/Yzh8UEPKS9i2vKrlWj6dakJf4Y614YYM6fVqbfnV10jCLLoM+uwMM22viqbNvJvYsou/fGMNDo8dXct23YS1cG7e7Qb2mDWPTjNICCqFHhBdOFhVYF39FNX1EaY0SXqImqJ1XYWsD2+8bShOaGQdB04t89/1O/w1cDnyilFU=')
 # Channel Secret
-handler = WebhookHandler('你的Channel Secret')
+handler = WebhookHandler('f9219d0bf6d9489bc0e31b7bb4f5db0a')
 
 @app.route("/")
 def index():
     return render_template("./index.html")
-
-@app.route("/heroku_wake_up")
-def heroku_wake_up():
-    return "Hey!Wake Up!!"
 
 # 監聽所有來自 /callback 的 Post Request
 @app.route("/callback", methods=['POST'])
