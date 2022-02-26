@@ -78,12 +78,12 @@
         }
 
         function liff_getProfile() {
-            var Profile = JSON.stringify(liff.getProfile());
-            alert(Profile);
+            var Profile = liff.getProfile();
+            alert(Profile.displayName);
         }
 
         function liff_getFriendship() {
-            var Friendship = liff.getFriendship();
+            var Friendship = JSON.stringify(liff.getFriendship());
             alert(Friendship);
         }
 
