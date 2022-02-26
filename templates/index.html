@@ -77,6 +77,11 @@
             alert(Context);
         }
 
+        function liff_getProfile() {
+            var Profile = JSON.stringify(liff.getProfile());
+            alert(Profile);
+        }
+
         function liff_isApiAvailable() {
             var apiName = 'shareTargetPicker'
             var isApiAvailable = liff.isApiAvailable(apiName);
@@ -117,6 +122,7 @@
     <button onclick="liff_getIDToken()">獲得用戶IDToken</button>
     <button onclick="liff_getDecodedIDToken()">獲得用戶DecodedIDToken</button>
     <button onclick="liff_getContext()">獲得啟動LIFF網頁來源的背景資訊</button>
+    <button onclick="liff_getProfile()">獲得使用者資訊</button>
 
 
 </body>
