@@ -53,6 +53,10 @@
             });
         }
 
+        function liff_logout() {
+            liff.logout();
+        }
+
         function liff_isApiAvailable() {
             var apiName = 'shareTargetPicker'
             var isApiAvailable = liff.isApiAvailable(apiName);
@@ -89,6 +93,7 @@
     <button onclick="liff_isInClient()">顯示是否在LIFF瀏覽器內</button>
     <button onclick="liff_isLoggedIn()">顯示是否登入LINE</button>
     <button onclick="liff_login()">登入LINE</button>
+    <button onclick="liff_logout()">登出LINE</button>
     <button onclick="liff_isApiAvailable()">顯示是否此網頁可用liff.shareTargetPicker() API</button>
 
 
