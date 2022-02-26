@@ -67,6 +67,11 @@
             alert(IDToken);
         }
 
+        function getDecodedIDToken() {
+            var DecodedIDToken = liff.getDecodedIDToken();
+            alert(DecodedIDToken);
+        }
+
         function liff_isApiAvailable() {
             var apiName = 'shareTargetPicker'
             var isApiAvailable = liff.isApiAvailable(apiName);
@@ -105,6 +110,7 @@
     <button onclick="liff_isApiAvailable()">顯示是否此網頁可用liff.shareTargetPicker() API</button>
     <button onclick="liff_getAccessToken()">獲得用戶accessToken</button>
     <button onclick="liff_getIDToken()">獲得用戶IDToken</button>
+    <button onclick="liff_getDecodedIDToken()">獲得用戶DecodedIDToken</button>
 
 
 </body>
