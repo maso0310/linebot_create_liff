@@ -31,7 +31,11 @@
 
         function liff_isInClient() {
             var InClient = liff.isInClient();
-            alert(InClient);
+            if (InClient != true) {
+                alert("未登入LINE");
+            } else {
+                alert("已登入LINE");
+            }
         }
 
 
