@@ -54,8 +54,13 @@
         }
 
         function liff_isApiAvailable() {
-            var isApiAvailable = liff.isApiAvailable('shareTargetPicker');
-            alert(isApiAvailable);
+            var apiName = 'shareTargetPicker'
+            var isApiAvailable = liff.isApiAvailable(apiName);
+            if (isApiAvailable != true) {
+                alert('無法使用' + apiName + ' API')
+            } else {
+                alert('可以使用' + apiName + ' API')
+            }
         }
 
 
