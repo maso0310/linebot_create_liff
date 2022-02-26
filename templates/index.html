@@ -47,6 +47,12 @@
             }
         }
 
+        function liff_login() {
+            liff.login({
+                redirectUri: "https://maso-personal.herokuapp.com/"
+            });
+        }
+
         function liff_isApiAvailable() {
             var isApiAvailable = liff.isApiAvailable('shareTargetPicker');
             alert(isApiAvailable);
@@ -77,7 +83,9 @@
     <button onclick="liff_getLineVersion()">顯示LINE版本</button>
     <button onclick="liff_isInClient()">顯示是否在LIFF瀏覽器內</button>
     <button onclick="liff_isLoggedIn()">顯示是否登入LINE</button>
+    <button onclick="liff_login()">登入LINE</button>
     <button onclick="liff_isApiAvailable()">顯示是否此網頁可用liff.shareTargetPicker() API</button>
+
 
 </body>
 
