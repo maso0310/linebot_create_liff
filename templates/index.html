@@ -24,6 +24,16 @@
             alert(Version);
         }
 
+        function liff_getLineVersion() {
+            var LineVersion = liff.getLineVersion();
+            alert(LineVersion);
+        }
+
+        function liff_isInClient() {
+            var InClient = liff.isInClient();
+            alert(InClient);
+        }
+
 
         $(document).ready(function() {
             var liffId = '1655997438-X8vP2vQB';
@@ -43,8 +53,9 @@
 
     <button onclick="liff_getOS()">顯示使用者操作系統</button>
     <button onclick="liff_getLanguage()">顯示使用者語言</button>
-    <button onclick="liff_getOS()">顯示LIFF SDK版本</button>
-    <button onclick="liff_getOS()">顯示LINE版本</button>
+    <button onclick="liff_getVersion()">顯示LIFF SDK版本</button>
+    <button onclick="liff_getLineVersion()">顯示LINE版本</button>
+    <button onclick="liff_isInClient()">顯示是否登入LINE</button>
 
 </body>
 
