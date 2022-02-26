@@ -32,11 +32,27 @@
         function liff_isInClient() {
             var InClient = liff.isInClient();
             if (InClient != true) {
+                alert("未使用LIFF瀏覽器");
+            } else {
+                alert("已使用LIFF瀏覽器");
+            }
+        }
+
+        function liff_isLoggedIn() {
+            var isLoggedIn = liff.isLoggedIn();
+            if (isLoggedIn != true) {
                 alert("未登入LINE");
             } else {
                 alert("已登入LINE");
             }
         }
+
+        function liff_isApiAvailable() {
+            var isApiAvailable = liff.isApiAvailable('shareTargetPicker');
+            alert(isApiAvailable);
+        }
+
+
 
 
         $(document).ready(function() {
@@ -59,7 +75,9 @@
     <button onclick="liff_getLanguage()">顯示使用者語言</button>
     <button onclick="liff_getVersion()">顯示LIFF SDK版本</button>
     <button onclick="liff_getLineVersion()">顯示LINE版本</button>
-    <button onclick="liff_isInClient()">顯示是否登入LINE</button>
+    <button onclick="liff_isInClient()">顯示是否在LIFF瀏覽器內</button>
+    <button onclick="liff_isLoggedIn()">顯示是否登入LINE</button>
+    <button onclick="liff_isApiAvailable()">顯示是否此網頁可用liff.shareTargetPicker() API</button>
 
 </body>
 
