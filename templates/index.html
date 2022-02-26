@@ -14,6 +14,17 @@
             alert(OS);
         }
 
+        function liff_getLanguage() {
+            var Language = liff.getLanguage();
+            alert(Language);
+        }
+
+        function liff_getVersion() {
+            var Version = liff.getVersion();
+            alert(Version);
+        }
+
+
         $(document).ready(function() {
             var liffId = '1655997438-X8vP2vQB';
             liff.init({
@@ -30,7 +41,10 @@
         <li>line-bot-sdk: 一個基於Python的SDK，可用於呼叫LINE BOT API。</li>
     </ul>
 
-    <button onclick="liff_getOS()">顯示操作系統</button>
+    <button onclick="liff_getOS()">顯示使用者操作系統</button>
+    <button onclick="liff_getLanguage()">顯示使用者語言</button>
+    <button onclick="liff_getOS()">顯示LIFF SDK版本</button>
+    <button onclick="liff_getOS()">顯示LINE版本</button>
 
 </body>
 
