@@ -79,12 +79,18 @@
 
         function liff_getProfile() {
             var Profile = liff.getProfile();
-            console.log(Profile)
+            alert(Profile.displayName);
         }
 
         function liff_getFriendship() {
             var Friendship = liff.getFriendship();
-            console.log(Friendship)
+            alert(Friendship);
+        }
+
+        function liff_sendMessages() {
+            var message = 'LIFF網頁傳送訊息';
+            liff.sendMessages(message)
+            alert('LIFF傳送訊息成功')
         }
 
         function liff_isApiAvailable() {
@@ -129,6 +135,7 @@
     <button onclick="liff_getContext()">獲得啟動LIFF網頁來源的背景資訊</button>
     <button onclick="liff_getProfile()">獲得使用者資訊</button>
     <button onclick="liff_getFriendship()">顯示是否加入官方帳號為好友</button>
+    <button onclick="liff_sendMessages()">傳送訊息</button>
 
 
 </body>
