@@ -57,6 +57,11 @@
             liff.logout();
         }
 
+        function liff_getAccessToken() {
+            var accessToken = liff.getAccessToken();
+            alert(accessToken);
+        }
+
         function liff_isApiAvailable() {
             var apiName = 'shareTargetPicker'
             var isApiAvailable = liff.isApiAvailable(apiName);
@@ -66,8 +71,6 @@
                 alert('可以使用' + apiName + ' API')
             }
         }
-
-
 
 
         $(document).ready(function() {
@@ -95,6 +98,7 @@
     <button onclick="liff_login()">登入LINE</button>
     <button onclick="liff_logout()">登出LINE</button>
     <button onclick="liff_isApiAvailable()">顯示是否此網頁可用liff.shareTargetPicker() API</button>
+    <button onclick="liff_getAccessToken()">獲得accessToken</button>
 
 
 </body>
