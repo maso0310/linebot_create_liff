@@ -68,9 +68,9 @@
         }
 
         function liff_getDecodedIDToken() {
-            var DecodedIDToken = liff.getDecodedIDToken();
+            var DecodedIDToken = JSON.stringify(liff.getDecodedIDToken());
             alert(DecodedIDToken);
-            console.log(DecodedIDToken)
+            console.log(DecodedIDToken);
         }
 
         function liff_isApiAvailable() {
