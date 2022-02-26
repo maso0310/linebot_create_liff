@@ -90,7 +90,17 @@
         function liff_sendMessages() {
             var message = 'LIFF網頁傳送訊息';
             liff.sendMessages(message)
-            alert('LIFF傳送訊息成功')
+            alert('LIFF傳送訊息')
+        }
+
+        function liff_openWindow() {
+            liff.openWindow({
+                url: "https://developers.line.biz/en/reference/liff/",
+            });
+        }
+
+        function liff_closeWindow() {
+            liff.closeWindow()
         }
 
         function liff_isApiAvailable() {
@@ -136,6 +146,8 @@
     <button onclick="liff_getProfile()">獲得使用者資訊</button>
     <button onclick="liff_getFriendship()">顯示是否加入官方帳號為好友</button>
     <button onclick="liff_sendMessages()">傳送訊息</button>
+    <button onclick="liff_openWindow()">開啟視窗</button>
+    <button onclick="liff_closeWindow()">關閉視窗</button>
 
 
 </body>
