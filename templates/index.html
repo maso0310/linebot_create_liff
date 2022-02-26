@@ -70,7 +70,11 @@
         function liff_getDecodedIDToken() {
             var DecodedIDToken = JSON.stringify(liff.getDecodedIDToken());
             alert(DecodedIDToken);
-            console.log(DecodedIDToken);
+        }
+
+        function liff_getContext() {
+            var Context = JSON.stringify(liff.getContext());
+            alert(Context);
         }
 
         function liff_isApiAvailable() {
@@ -112,6 +116,7 @@
     <button onclick="liff_getAccessToken()">獲得用戶accessToken</button>
     <button onclick="liff_getIDToken()">獲得用戶IDToken</button>
     <button onclick="liff_getDecodedIDToken()">獲得用戶DecodedIDToken</button>
+    <button onclick="liff_getContext()">獲得啟動LIFF網頁來源的背景資訊</button>
 
 
 </body>
