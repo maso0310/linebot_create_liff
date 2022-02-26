@@ -1,3 +1,3 @@
 git add .
 git commit -am'ok'
-git push heroku master
+git push origin master
