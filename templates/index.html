@@ -84,8 +84,13 @@
         }
 
         function liff_getProfile() {
-            var Profile = JSON.stringify(liff.getProfile());
-            alert(Profile.displayName);
+            liff.getProfile()
+            .then(profile => {
+              alert(JSON.stringify(profile));
+            })
+            .catch((err) => {
+              console.log('error', err);
+            });
         }
 
         function liff_getFriendship() {
