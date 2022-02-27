@@ -11,10 +11,7 @@
     <script>
         //==========================LIFF API初始化================================
         $(document).ready(function() {
-            var liffId = '1655997438-X8vP2vQB';
-            liff.init({
-                liffId
-            })
+            liff.init({'1655997438-X8vP2vQB'})
         });
         //==========================LIFF API初始化================================
 
@@ -141,7 +138,7 @@
         <li>line-bot-sdk: 一個基於Python的SDK，可用於呼叫LINE BOT API。</li>
     </ul>
 
-    <button onclick="liff_getOS()">顯示使用者操作系統</button><br><br>
+    <button onclick="liff_getOS()">顯示使用者作業系統</button><br><br>
     <button onclick="liff_getLanguage()">顯示使用者語言</button><br><br>
     <button onclick="liff_getVersion()">顯示LIFF SDK版本</button><br><br>
     <button onclick="liff_getLineVersion()">顯示LINE版本</button><br><br>
