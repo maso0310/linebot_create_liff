@@ -99,7 +99,10 @@
         }
 
         function liff_sendMessages() {
-            var message = 'LIFF網頁傳送訊息';
+            var message = {
+                "type": "text",
+                "text": "LIFF傳送訊息",
+            };
             liff.sendMessages(message)
             alert('LIFF傳送訊息')
         }
