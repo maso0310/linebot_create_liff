@@ -13,20 +13,6 @@ from liffpy import (
     ErrorResponse
 )
 
-liff_api = LIFF("Hm/Yzh8UEPKS9i2vKrlWj6dakJf4Y614YYM6fVqbfnV10jCLLoM+uwMM22viqbNvJvYsou/fGMNDo8dXct23YS1cG7e7Qb2mDWPTjNICCqFHhBdOFhVYF39FNX1EaY0SXqImqJ1XYWsD2+8bShOaGQdB04t89/1O/w1cDnyilFU=")
-
-try:
-    now_LIFF_APP_number = len(liff_api.get())
-except:
-    now_LIFF_APP_number = 0
-
-target_LIFF_APP_number = 10
-print(target_LIFF_APP_number,now_LIFF_APP_number)
-if now_LIFF_APP_number < target_LIFF_APP_number:
-    for i in range(target_LIFF_APP_number - now_LIFF_APP_number):
-        liff_api.add(view_type="full",view_url="https://www.google.com")
-
-
 #======這裡是呼叫的檔案內容=====
 from message import *
 from new import *
@@ -41,10 +27,24 @@ import time
 
 app = Flask(__name__,template_folder='templates')
 static_tmp_path = os.path.join(os.path.dirname(__file__), 'static', 'tmp')
-# Channel Access Token
-line_bot_api = LineBotApi('Hm/Yzh8UEPKS9i2vKrlWj6dakJf4Y614YYM6fVqbfnV10jCLLoM+uwMM22viqbNvJvYsou/fGMNDo8dXct23YS1cG7e7Qb2mDWPTjNICCqFHhBdOFhVYF39FNX1EaY0SXqImqJ1XYWsD2+8bShOaGQdB04t89/1O/w1cDnyilFU=')
-# Channel Secret
-handler = WebhookHandler('f9219d0bf6d9489bc0e31b7bb4f5db0a')
+
+CHANNEL_ACCESS_TOKEN = "Hm/Yzh8UEPKS9i2vKrlWj6dakJf4Y614YYM6fVqbfnV10jCLLoM+uwMM22viqbNvJvYsou/fGMNDo8dXct23YS1cG7e7Qb2mDWPTjNICCqFHhBdOFhVYF39FNX1EaY0SXqImqJ1XYWsD2+8bShOaGQdB04t89/1O/w1cDnyilFU="
+CHANNEL_SECRET = 'f9219d0bf6d9489bc0e31b7bb4f5db0a'
+
+liff_api = LIFF(CHANNEL_ACCESS_TOKEN)
+line_bot_api = LineBotApi(CHANNEL_ACCESS_TOKEN)
+handler = WebhookHandler(CHANNEL_SECRET)
+
+try:
+    now_LIFF_APP_number = len(liff_api.get())
+except:
+    now_LIFF_APP_number = 0
+
+target_LIFF_APP_number = 10
+print(target_LIFF_APP_number,now_LIFF_APP_number)
+if now_LIFF_APP_number < target_LIFF_APP_number:
+    for i in range(target_LIFF_APP_number - now_LIFF_APP_number):
+        liff_api.add(view_type="full",view_url="https://www.google.com")
 
 @app.route("/")
 def index():
