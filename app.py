@@ -8,6 +8,24 @@ from linebot.exceptions import (
 )
 from linebot.models import *
 
+from liffpy import (
+    LineFrontendFramework as LIFF,
+    ErrorResponse
+)
+
+liff_api = LIFF("Hm/Yzh8UEPKS9i2vKrlWj6dakJf4Y614YYM6fVqbfnV10jCLLoM+uwMM22viqbNvJvYsou/fGMNDo8dXct23YS1cG7e7Qb2mDWPTjNICCqFHhBdOFhVYF39FNX1EaY0SXqImqJ1XYWsD2+8bShOaGQdB04t89/1O/w1cDnyilFU=")
+
+try:
+    now_LIFF_APP_number = len(liff_api.get())
+except:
+    now_LIFF_APP_number = 0
+
+target_LIFF_APP_number = 10
+print(target_LIFF_APP_number,now_LIFF_APP_number)
+if now_LIFF_APP_number < target_LIFF_APP_number:
+    for i in range(target_LIFF_APP_number - now_LIFF_APP_number):
+        liff_api.add(view_type="full",view_url="https://www.google.com")
+
 
 #======這裡是呼叫的檔案內容=====
 from message import *
@@ -30,7 +48,7 @@ handler = WebhookHandler('f9219d0bf6d9489bc0e31b7bb4f5db0a')
 
 @app.route("/")
 def index():
-    return render_template("./index.html")
+    return render_template("./liff.html")
 
 # 監聽所有來自 /callback 的 Post Request
 @app.route("/callback", methods=['POST'])

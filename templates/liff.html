@@ -119,7 +119,7 @@
                 "type": "image",
                 "originalContentUrl": "https://pic.pimg.tw/saryh777/1641637885-2419307650-g_n.png",
                 "previewImageUrl": "https://pic.pimg.tw/saryh777/1641637885-2419307650-g_n.png"
-            }, ], {
+            }], {
                 isMultiple: true,
             })
         }
@@ -134,15 +134,25 @@
             }
         }
     </script>
+    <style>
+        h1{
+            width:80%;
+            height:40px;
+            margin-left:10%;
+        }
+        button{
+            width:80%;
+            height:40px;
+            margin-left:10%;
+            background-color:#C9E8E3;
+            font-weight:600;
+        }
+    </style>
 </head>
 
 <body>
-    <h1>Maso的萬事屋LINEBOT範例，使用到以下套件</h1>
-    <ul>
-        <li>Flask: 一個使用Python編寫的輕量級Web應用框架。</li>
-        <li>line-bot-sdk: 一個基於Python的SDK，可用於呼叫LINE BOT API。</li>
-    </ul>
-
+    <h1>Maso的萬事屋LIFF API測試範例：</h1>
+    <h1></h1>
     <button onclick="liff_getOS()">顯示使用者作業系統</button><br><br>
     <button onclick="liff_getLanguage()">顯示使用者語言</button><br><br>
     <button onclick="liff_getVersion()">顯示LIFF SDK版本</button><br><br>
@@ -157,7 +167,6 @@
     <button onclick="liff_getDecodedIDToken()">獲得用戶DecodedIDToken</button><br><br>
     <button onclick="liff_getContext()">獲得啟動LIFF網頁來源的背景資訊</button><br><br>
     <button onclick="liff_getProfile()">獲得使用者資訊</button><br><br>
-    <button onclick="liff_getFriendship()">顯示是否加入官方帳號為好友</button><br><br>
     <button onclick="liff_sendMessages()">傳送訊息</button><br><br>
     <button onclick="liff_openWindow()">開啟新視窗</button><br><br>
     <button onclick="liff_closeWindow()">關閉新視窗</button><br><br>
