@@ -99,11 +99,12 @@
         }
 
         function liff_sendMessages() {
-            var message =[{
-                "type": "text",
-                "text": "這一則訊息是來自LIFF網頁",
-            }];
-            liff.sendMessages(message)
+            liff.sendMessages([
+                {
+                  type: "text",
+                  text: "這一則訊息是來自LIFF網頁",
+                },
+            ]);
             alert('LIFF傳送訊息')
         }
 
