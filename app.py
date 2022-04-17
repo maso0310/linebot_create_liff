@@ -96,7 +96,9 @@ def handle_message(event):
 
 @handler.add(PostbackEvent)
 def handle_message(event):
-    print(event.postback.data)
+    if event.postback.data == 'Maso的鑄鐵坊':
+        message = TextSendMessage(text="Maso的鑄鐵坊，目前施工中...")
+        line_bot_api.reply_message(event.reply_token, message)
 
 
 @handler.add(MemberJoinedEvent)
