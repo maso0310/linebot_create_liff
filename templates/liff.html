@@ -135,129 +135,120 @@
 
         function liff_LINE_Card() {
             liff.shareTargetPicker(
-                    [{
-                        type: "flex",
-                        altText: "Maso的LINE名片",
-                        contents: {
-                            "type": "carousel",
-                            "contents": [{
-                                "type": "bubble",
-                                "size": "mega",
-                                "hero": {
-                                    "type": "image",
-                                    "url": "https://i.imgur.com/ZuRTzVj.png",
-                                    "size": "full",
-                                    "margin": "none",
-                                    "align": "center",
-                                    "gravity": "center",
-                                    "position": "relative",
-                                    "flex": 0,
-                                    "animated": false,
-                                    "aspectMode": "cover",
-                                    "aspectRatio": "64:72"
-                                },
-                                "body": {
+                [{
+                    type: "flex",
+                    altText: "Maso的LINE名片",
+                    contents: {
+                        "type": "carousel",
+                        "contents": [{
+                            "type": "bubble",
+                            "size": "mega",
+                            "hero": {
+                                "type": "image",
+                                "url": "https://i.imgur.com/ZuRTzVj.png",
+                                "size": "full",
+                                "margin": "none",
+                                "align": "center",
+                                "gravity": "center",
+                                "position": "relative",
+                                "flex": 0,
+                                "animated": false,
+                                "aspectMode": "cover",
+                                "aspectRatio": "64:72"
+                            },
+                            "body": {
+                                "type": "box",
+                                "layout": "vertical",
+                                "contents": [{
                                     "type": "box",
                                     "layout": "vertical",
                                     "contents": [{
-                                        "type": "box",
-                                        "layout": "vertical",
-                                        "contents": [{
-                                            "type": "text",
-                                            "text": "◈ 我發現了一把鏟子\n\n某天，因為朋友在LINE群組中加入了一個聊天機器人，原本只是想要搜尋還有哪些聊天機器人好用的我，卻意外地發現了一些如何製作聊天機器人的教學文章。\n\n在懵懵懂懂的情況下，我發現了這把名為程式尋寶的鏟子，從那時候起我開啟了這趟發掘可能性的旅程…\n\n",
-                                            "wrap": true,
-                                            "size": "sm"
-                                        }]
-                                    }, {
-                                        "type": "box",
-                                        "layout": "vertical",
-                                        "contents": [{
-                                            "type": "button",
-                                            "action": {
-                                                "type": "uri",
-                                                "label": "❖　看看我挖到什麼",
-                                                "uri": "https://www.google.com"
-                                            },
-                                            "style": "secondary",
-                                            "color": "#B5EAEF"
-                                        }, {
-                                            "type": "button",
-                                            "action": {
-                                                "type": "postback",
-                                                "label": "❖　Maso的鑄鐵坊",
-                                                "data": "Maso的鑄鐵坊"
-                                            },
-                                            "style": "secondary",
-                                            "color": "#B5EAEF",
-                                            "margin": "lg"
-                                        }]
+                                        "type": "text",
+                                        "text": "◈ 我發現了一把鏟子\n\n某天，因為朋友在LINE群組中加入了一個聊天機器人，原本只是想要搜尋還有哪些聊天機器人好用的我，卻意外地發現了一些如何製作聊天機器人的教學文章。\n\n在懵懵懂懂的情況下，我發現了這把名為程式尋寶的鏟子，從那時候起我開啟了這趟發掘可能性的旅程…\n\n",
+                                        "wrap": true,
+                                        "size": "sm"
                                     }]
-                                }
-                            }, {
-                                "type": "bubble",
-                                "hero": {
-                                    "type": "image",
-                                    "url": "https://i.imgur.com/tCGgamM.png",
-                                    "align": "center",
-                                    "gravity": "center",
-                                    "size": "full",
-                                    "aspectMode": "cover",
-                                    "animated": false,
-                                    "aspectRatio": "64:72"
-                                },
-                                "body": {
+                                }, {
                                     "type": "box",
                                     "layout": "vertical",
                                     "contents": [{
-                                        "type": "box",
-                                        "layout": "vertical",
-                                        "contents": [{
-                                            "type": "text",
-                                            "text": "◈ 坑越挖越大洞啦\n\n沒錯，踏上這條不歸路的人們都懂得，手上的這把鏟子是一個會讓你深陷越大越大的坑洞之中，沒有終止的一天的可怕工具，但在我回過神來的時候，才發現自己已癡迷於探索它所帶來的無限知識寶藏，你可以說我是個打字的，也可以說我是個挖坑的，坑都挖好了，準備好要一起跳進去了嗎？(Y/N)\n\n",
-                                            "wrap": true,
-                                            "size": "sm",
-                                            "gravity": "top"
-                                        }]
+                                        "type": "button",
+                                        "action": {
+                                            "type": "uri",
+                                            "label": "❖　看看我挖到什麼",
+                                            "uri": "https://www.youtube.com/channel/UCpzVAEwEs9AwT2uAOZuxaRQ"
+                                        },
+                                        "style": "secondary",
+                                        "color": "#B5EAEF"
                                     }, {
-                                        "type": "box",
-                                        "layout": "vertical",
-                                        "contents": [{
-                                            "type": "button",
-                                            "action": {
-                                                "type": "uri",
-                                                "label": "❖　加入Maso的好友",
-                                                "uri": "https://www.google.com"
-                                            },
-                                            "style": "secondary",
-                                            "color": "#B5EAEF"
-                                        }, {
-                                            "type": "button",
-                                            "action": {
-                                                "type": "uri",
-                                                "label": "❖　訂閱Maso的萬事屋",
-                                                "uri": "https://www.google.com"
-                                            },
-                                            "color": "#B5EAEF",
-                                            "style": "secondary",
-                                            "margin": "lg"
-                                        }]
+                                        "type": "button",
+                                        "action": {
+                                            "type": "postback",
+                                            "label": "❖　Maso的鑄鐵坊",
+                                            "data": "Maso的鑄鐵坊"
+                                        },
+                                        "style": "secondary",
+                                        "color": "#B5EAEF",
+                                        "margin": "lg"
                                     }]
-                                }
-                            }]
-                        }
-                    }], {
-                        isMultiple: true,
+                                }]
+                            }
+                        }, {
+                            "type": "bubble",
+                            "hero": {
+                                "type": "image",
+                                "url": "https://i.imgur.com/tCGgamM.png",
+                                "align": "center",
+                                "gravity": "center",
+                                "size": "full",
+                                "aspectMode": "cover",
+                                "animated": false,
+                                "aspectRatio": "64:72"
+                            },
+                            "body": {
+                                "type": "box",
+                                "layout": "vertical",
+                                "contents": [{
+                                    "type": "box",
+                                    "layout": "vertical",
+                                    "contents": [{
+                                        "type": "text",
+                                        "text": "◈ 坑越挖越大洞啦\n\n沒錯，踏上這條不歸路的人們都懂得，手上的這把鏟子是一個會讓你深陷越大越大的坑洞之中，沒有終止的一天的可怕工具，但在我回過神來的時候，才發現自己已癡迷於探索它所帶來的無限知識寶藏，你可以說我是個打字的，也可以說我是個挖坑的，坑都挖好了，準備好要一起跳進去了嗎？(Y/N)\n\n",
+                                        "wrap": true,
+                                        "size": "sm",
+                                        "gravity": "top"
+                                    }]
+                                }, {
+                                    "type": "box",
+                                    "layout": "vertical",
+                                    "contents": [{
+                                        "type": "button",
+                                        "action": {
+                                            "type": "uri",
+                                            "label": "❖　加入Maso的好友",
+                                            "uri": "https://line.me/ti/p/KeRocPY6PP"
+                                        },
+                                        "style": "secondary",
+                                        "color": "#B5EAEF"
+                                    }, {
+                                        "type": "button",
+                                        "action": {
+                                            "type": "uri",
+                                            "label": "❖　訂閱Maso的萬事屋",
+                                            "uri": "https://www.youtube.com/channel/UCpzVAEwEs9AwT2uAOZuxaRQ?sub_confirmation=1"
+                                        },
+                                        "color": "#B5EAEF",
+                                        "style": "secondary",
+                                        "margin": "lg"
+                                    }]
+                                }]
+                            }
+                        }]
                     }
-                )
-                .then(function(res) {
-                    // succeeded in sending a message through TargetPicker
-                    liff.closeWindow();
-                })
-                .catch(function(error) {
-                    // something went wrong before sending a message
-                    console.log("something wrong happen");
-                    console.log(error);
-                });
+                }], {
+                    isMultiple: true,
+                }
+            );
         }
 
         function liff_isApiAvailable() {
