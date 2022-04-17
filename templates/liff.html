@@ -139,116 +139,132 @@
                     type: "flex",
                     altText: "Maso的LINE名片",
                     contents: {
-                        "type": "carousel",
-                        "contents": [{
-                            "type": "bubble",
-                            "size": "mega",
-                            "hero": {
-                                "type": "image",
-                                "url": "https://i.imgur.com/ZuRTzVj.png",
-                                "size": "full",
-                                "margin": "none",
-                                "align": "center",
-                                "gravity": "center",
-                                "position": "relative",
-                                "flex": 0,
-                                "animated": false,
-                                "aspectMode": "cover",
-                                "aspectRatio": "64:72"
-                            },
-                            "body": {
-                                "type": "box",
-                                "layout": "vertical",
-                                "contents": [{
-                                    "type": "box",
-                                    "layout": "vertical",
-                                    "contents": [{
-                                        "type": "text",
-                                        "text": "◈ 我發現了一把鏟子\n\n某天，因為朋友在LINE群組中加入了一個聊天機器人，原本只是想要搜尋還有哪些聊天機器人好用的我，卻意外地發現了一些如何製作聊天機器人的教學文章。\n\n在懵懵懂懂的情況下，我發現了這把名為程式尋寶的鏟子，從那時候起我開啟了這趟發掘可能性的旅程…\n\n",
-                                        "wrap": true,
-                                        "size": "sm"
-                                    }]
-                                }, {
-                                    "type": "box",
-                                    "layout": "vertical",
-                                    "contents": [{
-                                        "type": "button",
-                                        "action": {
-                                            "type": "uri",
-                                            "label": "❖　看看我挖到什麼",
-                                            "uri": "https://www.youtube.com/channel/UCpzVAEwEs9AwT2uAOZuxaRQ"
-                                        },
-                                        "style": "secondary",
-                                        "color": "#B5EAEF"
-                                    }, {
-                                        "type": "button",
-                                        "action": {
-                                            "type": "postback",
-                                            "label": "❖　Maso的鑄鐵坊",
-                                            "data": "Maso的鑄鐵坊"
-                                        },
-                                        "style": "secondary",
-                                        "color": "#B5EAEF",
-                                        "margin": "lg"
-                                    }]
-                                }]
+                        "type": "bubble",
+                        "hero": {
+                            "type": "image",
+                            "url": "https://scdn.line-apps.com/n/channel_devcenter/img/fx/01_1_cafe.png",
+                            "size": "full",
+                            "aspectRatio": "20:13",
+                            "aspectMode": "cover",
+                            "action": {
+                                "type": "uri",
+                                "uri": "http://linecorp.com/"
                             }
-                        }, {
-                            "type": "bubble",
-                            "hero": {
-                                "type": "image",
-                                "url": "https://i.imgur.com/tCGgamM.png",
-                                "align": "center",
-                                "gravity": "center",
-                                "size": "full",
-                                "aspectMode": "cover",
-                                "animated": false,
-                                "aspectRatio": "64:72"
-                            },
-                            "body": {
+                        },
+                        "body": {
+                            "type": "box",
+                            "layout": "vertical",
+                            "contents": [{
+                                "type": "text",
+                                "text": "Brown Cafe",
+                                "weight": "bold",
+                                "size": "xl"
+                            }, {
+                                "type": "box",
+                                "layout": "baseline",
+                                "margin": "md",
+                                "contents": [{
+                                    "type": "icon",
+                                    "size": "sm",
+                                    "url": "https://scdn.line-apps.com/n/channel_devcenter/img/fx/review_gold_star_28.png"
+                                }, {
+                                    "type": "icon",
+                                    "size": "sm",
+                                    "url": "https://scdn.line-apps.com/n/channel_devcenter/img/fx/review_gold_star_28.png"
+                                }, {
+                                    "type": "icon",
+                                    "size": "sm",
+                                    "url": "https://scdn.line-apps.com/n/channel_devcenter/img/fx/review_gold_star_28.png"
+                                }, {
+                                    "type": "icon",
+                                    "size": "sm",
+                                    "url": "https://scdn.line-apps.com/n/channel_devcenter/img/fx/review_gold_star_28.png"
+                                }, {
+                                    "type": "icon",
+                                    "size": "sm",
+                                    "url": "https://scdn.line-apps.com/n/channel_devcenter/img/fx/review_gray_star_28.png"
+                                }, {
+                                    "type": "text",
+                                    "text": "4.0",
+                                    "size": "sm",
+                                    "color": "#999999",
+                                    "margin": "md",
+                                    "flex": 0
+                                }]
+                            }, {
                                 "type": "box",
                                 "layout": "vertical",
+                                "margin": "lg",
+                                "spacing": "sm",
                                 "contents": [{
                                     "type": "box",
-                                    "layout": "vertical",
+                                    "layout": "baseline",
+                                    "spacing": "sm",
                                     "contents": [{
                                         "type": "text",
-                                        "text": "◈ 坑越挖越大洞啦\n\n沒錯，踏上這條不歸路的人們都懂得，手上的這把鏟子是一個會讓你深陷越大越大的坑洞之中，沒有終止的一天的可怕工具，但在我回過神來的時候，才發現自己已癡迷於探索它所帶來的無限知識寶藏，你可以說我是個打字的，也可以說我是個挖坑的，坑都挖好了，準備好要一起跳進去了嗎？(Y/N)\n\n",
-                                        "wrap": true,
+                                        "text": "Place",
+                                        "color": "#aaaaaa",
                                         "size": "sm",
-                                        "gravity": "top"
+                                        "flex": 1
+                                    }, {
+                                        "type": "text",
+                                        "text": "Miraina Tower, 4-1-6 Shinjuku, Tokyo",
+                                        "wrap": true,
+                                        "color": "#666666",
+                                        "size": "sm",
+                                        "flex": 5
                                     }]
                                 }, {
                                     "type": "box",
-                                    "layout": "vertical",
+                                    "layout": "baseline",
+                                    "spacing": "sm",
                                     "contents": [{
-                                        "type": "button",
-                                        "action": {
-                                            "type": "uri",
-                                            "label": "❖　加入Maso的好友",
-                                            "uri": "https://line.me/ti/p/KeRocPY6PP"
-                                        },
-                                        "style": "secondary",
-                                        "color": "#B5EAEF"
+                                        "type": "text",
+                                        "text": "Time",
+                                        "color": "#aaaaaa",
+                                        "size": "sm",
+                                        "flex": 1
                                     }, {
-                                        "type": "button",
-                                        "action": {
-                                            "type": "uri",
-                                            "label": "❖　訂閱Maso的萬事屋",
-                                            "uri": "https://www.youtube.com/channel/UCpzVAEwEs9AwT2uAOZuxaRQ?sub_confirmation=1"
-                                        },
-                                        "color": "#B5EAEF",
-                                        "style": "secondary",
-                                        "margin": "lg"
+                                        "type": "text",
+                                        "text": "10:00 - 23:00",
+                                        "wrap": true,
+                                        "color": "#666666",
+                                        "size": "sm",
+                                        "flex": 5
                                     }]
                                 }]
-                            },
-                            "footer": {
+                            }]
+                        },
+                        "footer": {
+                            "type": "box",
+                            "layout": "vertical",
+                            "spacing": "sm",
+                            "contents": [{
+                                "type": "button",
+                                "style": "link",
+                                "height": "sm",
+                                "action": {
+                                    "type": "uri",
+                                    "label": "CALL",
+                                    "uri": "https://linecorp.com"
+                                }
+                            }, {
+                                "type": "button",
+                                "style": "link",
+                                "height": "sm",
+                                "action": {
+                                    "type": "uri",
+                                    "label": "WEBSITE",
+                                    "uri": "https://linecorp.com"
+                                }
+                            }, {
                                 "type": "box",
                                 "layout": "vertical",
-                                "contents": []
-                            }
-                        }]
+                                "contents": [],
+                                "margin": "sm"
+                            }],
+                            "flex": 0
+                        }
                     }
                 }], {
                     isMultiple: true,
