@@ -25,12 +25,12 @@ if now_LIFF_APP_number < target_LIFF_APP_number:
 ```
 
 將上述程式碼新增於LINEBOT主程式中，即可依target_LIFF_APP_number數量生成LIFF網頁
-`<br><br>`
-====================================`<br>`
-如果喜歡這個教學內容`<br>`
-歡迎訂閱Youtube頻道`<br>`
-[Maso的萬事屋](https://www.youtube.com/playlist?list=PLG4d6NSc7_l5-GjYiCdYa7H5Wsz0oQA7U)`<br>`
-或加LINE私下交流 LINE ID: mastermaso`<br>`
-![LOGO](https://yt3.ggpht.com/ytc/AKedOLR7I7tw_IxwJRgso1sT4paNu2s6_4hMw2goyDdrYQ=s88-c-k-c0x00ffffff-no-rj)`<br>`
 
-====================================`<br>`
+====================================
+如果喜歡這個教學內容
+歡迎訂閱Youtube頻道
+[Maso的萬事屋](https://www.youtube.com/playlist?list=PLG4d6NSc7_l5-GjYiCdYa7H5Wsz0oQA7U)
+或加LINE私下交流 LINE ID: mastermaso
+![LOGO](https://yt3.ggpht.com/ytc/AKedOLR7I7tw_IxwJRgso1sT4paNu2s6_4hMw2goyDdrYQ=s88-c-k-c0x00ffffff-no-rj)
+
+====================================
