@@ -28,12 +28,9 @@ import time
 app = Flask(__name__,template_folder='templates')
 static_tmp_path = os.path.join(os.path.dirname(__file__), 'static', 'tmp')
 
-CHANNEL_ACCESS_TOKEN = "你的CHANNEL_ACCESS_TOKEN"
-CHANNEL_SECRET = '你的CHANNEL_SECRET'
-
-liff_api = LIFF(CHANNEL_ACCESS_TOKEN)
-line_bot_api = LineBotApi(CHANNEL_ACCESS_TOKEN)
-handler = WebhookHandler(CHANNEL_SECRET)
+liff_api = LIFF(os.getenv('CHANNEL_ACCESS_TOKEN'))
+line_bot_api = LineBotApi(os.getenv('CHANNEL_ACCESS_TOKEN'))
+handler = WebhookHandler(os.getenv('CHANNEL_SECRET'))
 
 try:
     now_LIFF_APP_number = len(liff_api.get())
