@@ -8,11 +8,6 @@ from linebot.exceptions import (
 )
 from linebot.models import *
 
-from liffpy import (
-    LineFrontendFramework as LIFF,
-    ErrorResponse
-)
-
 #======這裡是呼叫的檔案內容=====
 from message import *
 from new import *
@@ -28,20 +23,8 @@ import time
 app = Flask(__name__,template_folder='templates')
 static_tmp_path = os.path.join(os.path.dirname(__file__), 'static', 'tmp')
 
-liff_api = LIFF(os.getenv('CHANNEL_ACCESS_TOKEN'))
 line_bot_api = LineBotApi(os.getenv('CHANNEL_ACCESS_TOKEN'))
 handler = WebhookHandler(os.getenv('CHANNEL_SECRET'))
-
-try:
-    now_LIFF_APP_number = len(liff_api.get())
-except:
-    now_LIFF_APP_number = 0
-
-target_LIFF_APP_number = 10
-print(target_LIFF_APP_number,now_LIFF_APP_number)
-if now_LIFF_APP_number < target_LIFF_APP_number:
-    for i in range(target_LIFF_APP_number - now_LIFF_APP_number):
-        liff_api.add(view_type="full",view_url="https://www.google.com")
 
 @app.route("/")
 def index():
